@@ -1,0 +1,58 @@
+{
+  "company_name": "腾讯控股",
+  "ticker": "00700.HK",
+  "date": "2026-04-30",
+  "current_price": 479.2,
+  "currency": "HKD",
+  "report_currency": "CNY",
+  "shares": 91.26,
+  "fx_rate": 1.146,
+  "market": "HK",
+  "industry": "互联网平台",
+  "financials": {
+    "base_year": 2024,
+    "revenue": 660.26,
+    "operating_profit": 208.10,
+    "net_profit": 194.07,
+    "operating_cf": 258.52,
+    "capex": 62.93,
+    "fcf": 195.59,
+    "gross_margin": 0.529,
+    "net_margin": 0.2976,
+    "fcf_margin": 0.296,
+    "roe": 0.2178,
+    "net_debt": -50
+  },
+  "wacc": {
+    "rf": 0.03,
+    "rf_source": "10Y中国国债",
+    "erp": 0.065,
+    "erp_source": "港股市场",
+    "beta": 0.90,
+    "beta_source": "互联网平台龙头"
+  },
+  "scenarios": [
+    {
+      "name": "乐观情景",
+      "description": "AI业务加速变现+游戏持续高增长+广告业务强劲+视频号商业化超预期",
+      "growth_rates": [0.15, 0.13, 0.11, 0.09, 0.08],
+      "fcf_margins": [0.31, 0.32, 0.33, 0.34, 0.35],
+      "terminal_growth": 0.03
+    },
+    {
+      "name": "基准情景",
+      "description": "稳健增长，AI变现逐步推进，游戏和广告业务保持稳定增长",
+      "growth_rates": [0.10, 0.09, 0.08, 0.07, 0.06],
+      "fcf_margins": [0.30, 0.305, 0.31, 0.315, 0.32],
+      "terminal_growth": 0.025
+    },
+    {
+      "name": "悲观情景",
+      "description": "宏观压力持续+竞争加剧+监管趋严+AI变现不及预期",
+      "growth_rates": [0.05, 0.04, 0.03, 0.03, 0.02],
+      "fcf_margins": [0.28, 0.275, 0.27, 0.265, 0.26],
+      "terminal_growth": 0.02,
+      "wacc_adjust": 0.01
+    }
+  ]
+}

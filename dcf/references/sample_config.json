@@ -1,0 +1,58 @@
+{
+  "company_name": "泡泡玛特",
+  "ticker": "09992.HK",
+  "date": "2026-04-18",
+  "current_price": 163.3,
+  "currency": "HKD",
+  "report_currency": "CNY",
+  "shares": 13.41,
+  "fx_rate": 1.08,
+  "market": "HK",
+  "industry": "消费/IP",
+  "financials": {
+    "base_year": 2025,
+    "revenue": 371.2,
+    "operating_profit": 130.8,
+    "net_profit": 130.7,
+    "operating_cf": 158.7,
+    "capex": 10,
+    "fcf": 148.7,
+    "gross_margin": 0.721,
+    "net_margin": 0.352,
+    "fcf_margin": 0.401,
+    "roe": 0.781,
+    "net_debt": -50
+  },
+  "wacc": {
+    "rf": 0.03,
+    "rf_source": "10Y中国国债",
+    "erp": 0.065,
+    "erp_source": "港股市场",
+    "beta": 0.85,
+    "beta_source": "消费/IP龙头"
+  },
+  "scenarios": [
+    {
+      "name": "乐观情景",
+      "description": "LABUBU维持高位+IP矩阵全面爆发+海外加速",
+      "growth_rates": [0.25, 0.22, 0.18, 0.15, 0.12],
+      "fcf_margins": [0.41, 0.42, 0.42, 0.43, 0.43],
+      "terminal_growth": 0.03
+    },
+    {
+      "name": "基准情景",
+      "description": "LABUBU热度缓降,IP矩阵大部分接住,增速放缓",
+      "growth_rates": [0.18, 0.14, 0.11, 0.09, 0.07],
+      "fcf_margins": [0.40, 0.40, 0.39, 0.38, 0.38],
+      "terminal_growth": 0.025
+    },
+    {
+      "name": "悲观情景",
+      "description": "LABUBU热度衰退,新IP不给力,估值体系切换",
+      "growth_rates": [0.05, 0.02, 0.04, 0.05, 0.05],
+      "fcf_margins": [0.38, 0.36, 0.35, 0.34, 0.34],
+      "terminal_growth": 0.02,
+      "wacc_adjust": 0.01
+    }
+  ]
+}
